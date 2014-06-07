@@ -109,6 +109,12 @@ rake test:prepare
 rake db:seed
 ```
 
+If you're using Heroku, you'll also need to remember to add the remote heroku repository reference:
+
+```sh
+git remote add heroku git@heroku.com:Repo.git
+```
+
 
 
 <a name="commands"></a>
