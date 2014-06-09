@@ -33,7 +33,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :file, :source => "~/.netrc", :destination => "/home/vagrant/.netrc"
   config.vm.provision :shell, :inline => "chmod 0600 /home/vagrant/.netrc"
 
-  # Git
+  # Misc configs
   config.vm.provision :file, :source => "~/.gitconfig", :destination => "/home/vagrant/.gitconfig"
+  config.vm.provision :file, :source => "~/.vimrc", :destination => "/home/vagrant/.vimrc"
 
 end
