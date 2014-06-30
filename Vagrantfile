@@ -7,6 +7,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "ubuntu/trusty32"
 
+  config.vm.provider :virtualbox do |p|
+    p.memory = 2048
+  end
+
   config.vm.network "forwarded_port", guest: 3000, host: 3000   # rails s
   config.vm.network "forwarded_port", guest: 5000, host: 5000   # foreman start
 
