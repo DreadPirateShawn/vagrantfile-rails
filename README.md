@@ -56,7 +56,7 @@ cd Repo
 bundle install   # ideally your .rvmrc covers this step
 rake db:create:all
 rake db:migrate
-rake test:prepare
+rake db:schema:load RAILS_ENV=test
 rake db:seed
 ```
 
