@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.ssh.forward_agent = true
 
-  config.vm.synced_folder "/coding/workspace_safe", "/coding/vagrant_workspace_safe",
+  config.vm.synced_folder "/coding/rails", "/coding_sync/rails",
     owner: "vagrant",
     group: "vagrant",
     mount_options: ["dmode=775,fmode=664"]
