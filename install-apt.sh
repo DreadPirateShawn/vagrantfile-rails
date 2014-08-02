@@ -16,3 +16,6 @@ apt-get install -y sqlite3 libsqlite3-dev postgresql libpq-dev
 apt-get install -y libgtk2.0 libgtkmm-2.4 libgtkmm-3.0
 apt-get install -y libnotify4
 
+# gruff
+apt-get install -y imagemagick libmagickcore-dev libmagickwand-dev
+
