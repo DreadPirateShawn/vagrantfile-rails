@@ -11,7 +11,7 @@ Features
 | OS | Ubuntu 14.04 LTS |
 | Vagrant box | ubuntu/trusty32 |
 | RVM | stable |
-| Ruby | 2.1.2 |
+| Ruby | 2.2.3 |
 | Gems | rails |
 | Heroku | Toolbelt |
 | PostgreSQL | apt-get default  |
