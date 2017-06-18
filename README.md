@@ -63,8 +63,10 @@ rake db:seed
 If you're using Heroku, you'll also need to remember to add the remote heroku repository reference:
 
 ```sh
-git remote add heroku git@heroku.com:Repo.git
+git remote add heroku git@heroku.com:your-repo.git
 ```
+
+Note: Case matters. Check Heroku app 'settings' page for the git URL.
 
 
 
