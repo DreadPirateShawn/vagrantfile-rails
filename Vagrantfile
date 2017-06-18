@@ -33,7 +33,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, :path => "install-psql.sh", :args => "vagrant"
 
   # Heroku
-  config.vm.provision :shell, :inline => "wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh"
+  config.vm.provision :shell, :inline => "wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh"
   config.vm.provision :file, :source => "~/.netrc", :destination => "/home/vagrant/.netrc"
   config.vm.provision :shell, :inline => "chmod 0600 /home/vagrant/.netrc"
 
