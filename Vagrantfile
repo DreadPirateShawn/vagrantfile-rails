@@ -11,7 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     p.memory = 2048
   end
 
-  config.vm.network "forwarded_port", guest: 3000, host: 3000   # rails s
+  config.vm.network "forwarded_port", guest: 3000, host: 3000   # rails server
   config.vm.network "forwarded_port", guest: 5000, host: 5000   # foreman start
 
   config.ssh.forward_agent = true
@@ -29,7 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision :shell, :path => "install-apt.sh"
   config.vm.provision :shell, :path => "install-rvm.sh",  :args => "stable"
-  config.vm.provision :shell, :path => "install-ruby.sh", :args => "2.2.3 rails"
+  config.vm.provision :shell, :path => "install-ruby.sh", :args => "2.2.3"
   config.vm.provision :shell, :path => "install-psql.sh", :args => "vagrant"
 
   # Heroku
