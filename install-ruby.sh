@@ -23,6 +23,4 @@ fi
 echo "##############"
 echo "# Install gems"
 
-gem install nokogiri --version '1.7'
-gem install sprockets --version '3.7.2'
 gem install rails --version '4.2.11.3'
