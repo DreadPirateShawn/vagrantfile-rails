@@ -18,9 +18,3 @@ else
   #   which can avoid errors like: https://stackoverflow.com/q/7645918
   rvm use --install $ruby_version --disable-binary
 fi
-
-
-echo "##############"
-echo "# Install gems"
-
-gem install rails --version '4.2.11.3'
