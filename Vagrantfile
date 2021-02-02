@@ -29,7 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision :shell, :path => "install-apt.sh"
   config.vm.provision :shell, :path => "install-rvm.sh",  :args => "stable"
-  config.vm.provision :shell, :path => "install-ruby.sh", :args => "2.5.8"
+  config.vm.provision :shell, :path => "install-ruby.sh", :args => "2.6.6"
   config.vm.provision :shell, :path => "install-psql.sh", :args => "vagrant"
 
   # Heroku
