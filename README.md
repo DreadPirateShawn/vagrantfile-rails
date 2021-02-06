@@ -8,13 +8,10 @@ Features
 
 | Resource | Flavor |
 | :------------ | ---------------: |
-| OS | Ubuntu 14.04 LTS |
-| Vagrant box | ubuntu/trusty32 |
+| OS | Ubuntu 20.04 LTS |
+| Vagrant box | ubuntu/focal64 |
 | RVM | stable |
-| Ruby | 2.2.3 |
-| Gems | rails |
 | Heroku | Toolbelt |
-| PostgreSQL | apt-get default  |
 
 
 
@@ -89,16 +86,14 @@ Notes
   *Note: Obviously this will vary extensively based on your system. This is just a rough idea. May take notably longer on very first `vagrant up` since apt-get data is not yet cached.*
 
 #### General provision actions
-* install various apt packages
-* install RVM, Ruby, Rails
-* configure PostgreSQL user
+* install RVM
 * install Heroku toolbelt
 * enable SSH forwarding, copy `~/.gitconfig` into VM
 * forward ports 3000 and 5000 for `rails s` and `foreman start` defaults
 
   *Note: All provision actions can be run repeatedly -- `vagrant provision` on a running system is expected to succeed.*
   
-  *That said, the longer operations are skipped -- eg RVM installation isn't run if `which rvm` returns successfully. Bear in mind this means that RVM / Ruby upgrades are not checked upon re-provision, only upon destroy/up.*
+  *That said, the longer operations are skipped -- eg RVM installation isn't run if `which rvm` returns successfully. Bear in mind this means that these are not checked upon re-provision, only upon destroy/up.*
 
 
 
