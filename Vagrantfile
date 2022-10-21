@@ -17,12 +17,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.ssh.forward_agent = true
 
-  # https://github.com/fgrehm/vagrant-cachier/issues/175
-  config.cache.synced_folder_opts = {
-    owner: "_apt",
-    group: "_apt"
-  }
-
   config.vm.synced_folder "/home/sfalkho/Documents/github", "/coding_sync/github",
     owner: "vagrant",
     group: "vagrant",
